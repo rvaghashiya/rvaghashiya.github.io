@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cell-line classification | Rajkumar Vaghashiya</title>
+    <link>https://rvaghashiya.github.io/tag/cell-line-classification/</link>
+      <atom:link href="https://rvaghashiya.github.io/tag/cell-line-classification/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cell-line classification</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Rajkumar Vaghashiya</copyright><lastBuildDate>Mon, 30 Nov 2020 18:20:34 +0000</lastBuildDate>
+    <image>
+      <url>https://rvaghashiya.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Cell-line classification</title>
+      <link>https://rvaghashiya.github.io/tag/cell-line-classification/</link>
+    </image>
+    
+    <item>
+      <title>An Optimized Neural Network Architecture for Auto Characterization of Biological Cells in Digital Inline Holography Micrographs</title>
+      <link>https://rvaghashiya.github.io/publication/an-optimized-neural-network-architecture-for-auto-characterization-of-biological-cells-in-digital-inline-holography-micrographs/</link>
+      <pubDate>Mon, 30 Nov 2020 18:20:34 +0000</pubDate>
+      <guid>https://rvaghashiya.github.io/publication/an-optimized-neural-network-architecture-for-auto-characterization-of-biological-cells-in-digital-inline-holography-micrographs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
