@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision | Rajkumar Vaghashiya</title>
+    <link>https://rvaghashiya.github.io/tag/computer-vision/</link>
+      <atom:link href="https://rvaghashiya.github.io/tag/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <description>Computer Vision</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Rajkumar Vaghashiya</copyright><lastBuildDate>Thu, 01 Jul 2021 23:07:00 +0000</lastBuildDate>
+    <image>
+      <url>https://rvaghashiya.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Computer Vision</title>
+      <link>https://rvaghashiya.github.io/tag/computer-vision/</link>
+    </image>
+    
+    <item>
+      <title>MediSinGAN</title>
+      <link>https://rvaghashiya.github.io/project/medisingan/</link>
+      <pubDate>Thu, 01 Jul 2021 23:07:00 +0000</pubDate>
+      <guid>https://rvaghashiya.github.io/project/medisingan/</guid>
+      <description>&lt;h1 id=&#34;medisingan&#34;&gt;MediSinGAN&lt;/h1&gt;
+&lt;p&gt;The aim is to use an unconditional generative model, SinGAN, to augment medical image datasets using a single natural image.&lt;/p&gt;
+&lt;h2 id=&#34;current-progress&#34;&gt;Current Progress&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Implemented SinGAN architecture in JAX for the generation of realistic synthetic medical imaging data using a
+single training image and achieved a 20% reduction in training time&lt;/li&gt;
+&lt;li&gt;Evaluated the model applicability in MRI cross-modality image-to-image translation, Synthetic brain tumor
+generation, and Medical image segmentation (Histopathology)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
