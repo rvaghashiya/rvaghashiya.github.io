@@ -1,0 +1,1391 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Rajkumar Vaghashiya" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="IoT project to simulate a smart university for resource usage optimization with prototype deployed modules installed in Computer Lab." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://rvaghashiya.github.io/project/secure-and-smart-university/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.a7e3211120e7d3cca34ca081a9ec008f.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="https://rvaghashiya.github.io/project/secure-and-smart-university/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Rajkumar Vaghashiya" />
+  <meta property="og:url" content="https://rvaghashiya.github.io/project/secure-and-smart-university/" />
+  <meta property="og:title" content="Secure and Smart University | Rajkumar Vaghashiya" />
+  <meta property="og:description" content="IoT project to simulate a smart university for resource usage optimization with prototype deployed modules installed in Computer Lab." /><meta property="og:image" content="https://rvaghashiya.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="https://rvaghashiya.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-01-15T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2017-11-10T21:23:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rvaghashiya.github.io/project/secure-and-smart-university/"
+  },
+  "headline": "Secure and Smart University",
+  
+  "datePublished": "2019-01-15T00:00:00Z",
+  "dateModified": "2017-11-10T21:23:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Rajkumar Vaghashiya"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Rajkumar Vaghashiya",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rvaghashiya.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "IoT project to simulate a smart university for resource usage optimization with prototype deployed modules installed in Computer Lab."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Secure and Smart University | Rajkumar Vaghashiya</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="f6c7d47e9a6eccdba33b90ba8d2ae90e" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8f76bdc9e086322ed5147724ebba3d06.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Rajkumar Vaghashiya</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Rajkumar Vaghashiya</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/Rajkumar_Vaghashiya_CV.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Secure and Smart University</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Rajkumar Vaghashiya</span>, <span >
+      Dr. Nishant Doshi (Assistant Professor, PDPU)</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Nov 10, 2017
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="project-goals">Project Goals</h2>
+<ul>
+<li>IoT project to simulate a smart university for resource usage optimization, funded by ORSP-PDPU.</li>
+<li>Annual financial grant of ₹ 1,45,000 sanctioned by the university for the project development</li>
+<li>Prototype modules installed in Computer Lab: Light Control, Lab Temperature Control, Authorized Personnel Access.</li>
+<li>Raspberry Pi and Arduino, MQTT , Firebase/MongoDB , Python</li>
+</ul>
+<h2 id="intro">Intro</h2>
+<p>Every industry in the world is incorporating smart devices to enhance their service and productivity— Healthcare via various wearable devices, Transport industry via the intelligent transport system, Agriculture industry via smart farming sensors and farm monitoring sensors.</p>
+<p>But very few researches are focused on the use of internet of things for improving quality of university working functionality as well as education. University campuses are ideal place to impart smart environment, and would pique student&rsquo;s interest in learning about the latest equipment and tech.</p>
+<p>In this idea of a smart university, we will research on various modules for the smart university, available microcontrollers, communication protocols, and mobile applications as user interface. As an outcome of this project, we expect to design and implement robust architecture for the smart classroom.</p>
+<p>For the current project setup, we have focused on the aspects of smart classroom such as:</p>
+<ul>
+<li>Smart Classroom</li>
+<li>Smart Energy Controller</li>
+<li>Smart Security</li>
+</ul>
+<p>Following this, we will subsequently expand to other modules of a smart university.</p>
+<h2 id="aim">Aim</h2>
+<p>With an objective to implement secure smart university concept in PDPU campus, in a modular manner, following goals were achieved:</p>
+<ul>
+<li>PDPU becomes the first university of Gujarat to take step towards SMART University.</li>
+<li>Electricity consumption for the experimented room was found to reduce by a significant amount (20% percent electricity savings).</li>
+<li>The system permits constant monitoring of smoke and temperature which can help in an early identification of disaster.</li>
+</ul>
+<h2 id="modules-implemented-during-the-project">Modules Implemented during the project</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-virtual-setup-of-fully-automatic-smart-lights-for-labs">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Virtual setup of fully automatic smart lights for labs" srcset="
+               /project/secure-and-smart-university/Module1_hu272ca4e16d9952599a12d9135b76d3e4_266518_bb70951bdab569837a614acd34d5a7e1.webp 400w,
+               /project/secure-and-smart-university/Module1_hu272ca4e16d9952599a12d9135b76d3e4_266518_35222a478a17a77f4d3cdd80d5e17d36.webp 760w,
+               /project/secure-and-smart-university/Module1_hu272ca4e16d9952599a12d9135b76d3e4_266518_1200x1200_fit_q75_h2_lanczos_2.webp 1200w"
+               src="/project/secure-and-smart-university/Module1_hu272ca4e16d9952599a12d9135b76d3e4_266518_bb70951bdab569837a614acd34d5a7e1.webp"
+               width="760"
+               height="427"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Virtual setup of fully automatic smart lights for labs
+    </figcaption></figure>
+<p>Different classes or labs have replication of same setup connected to a central MySQL Server. The setup includes IR Motion sensor and Thermal sensor to detect any motion in the lab and to check whether any person is there in the lab. Accordingly the lights connected to microcontroller via relay are turned on and off. All the data is recorded to SQL server which is used further for additional analytics.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-virtual-setup-of-partially-automatic-smart-labs">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Virtual setup of partially automatic smart labs" srcset="
+               /project/secure-and-smart-university/Module2_hucf53cf6cb021d45fb01cd5fe71a45b9e_245120_f1a6dff458a4ddbc0326a73b0126abe6.webp 400w,
+               /project/secure-and-smart-university/Module2_hucf53cf6cb021d45fb01cd5fe71a45b9e_245120_f54d753b70139afaaadb7dfc0734a45c.webp 760w,
+               /project/secure-and-smart-university/Module2_hucf53cf6cb021d45fb01cd5fe71a45b9e_245120_1200x1200_fit_q75_h2_lanczos_2.webp 1200w"
+               src="/project/secure-and-smart-university/Module2_hucf53cf6cb021d45fb01cd5fe71a45b9e_245120_f1a6dff458a4ddbc0326a73b0126abe6.webp"
+               width="760"
+               height="427"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Virtual setup of partially automatic smart labs
+    </figcaption></figure>
+<p>It shows smart AC, light and fan for any class or labs which are controlled and monitored by an android mobile application. Mobile application have authentication which ensures only trusted users/owners have control over it. All the commands sent by the mobile apps and the responses to it are stored in the SQL database.</p>
+<h2 id="report">Report</h2>
+<p><a href="https://drive.google.com/file/d/1eYKJPjkcWY9G9gl6tPw9Nrq2l8Xxx5Mw/view?usp=sharing" target="_blank" rel="noopener">Energy Aware IoT based Automated Smart Lighting and CCTV System using MQTT and MySQL</a></p>
+<p><a href="http://www.warse.org/IJATCSE/static/pdf/file/ijatcse24816sl2019.pdf" target="_blank" rel="noopener">IoT – Principles and Paradigms</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/internet-of-things/">Internet of Things</a>
+  
+  <a class="badge badge-light" href="/tag/research/">Research</a>
+  
+  <a class="badge badge-light" href="/tag/applications/">Applications</a>
+  
+  <a class="badge badge-light" href="/tag/smart-university/">Smart University</a>
+  
+  <a class="badge badge-light" href="/tag/academic/">Academic</a>
+  
+  <a class="badge badge-light" href="/tag/iot/">IoT</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://rvaghashiya.github.io/project/secure-and-smart-university/&amp;text=Secure%20and%20Smart%20University" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://rvaghashiya.github.io/project/secure-and-smart-university/&amp;t=Secure%20and%20Smart%20University" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Secure%20and%20Smart%20University&amp;body=https://rvaghashiya.github.io/project/secure-and-smart-university/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://rvaghashiya.github.io/project/secure-and-smart-university/&amp;title=Secure%20and%20Smart%20University" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Secure%20and%20Smart%20University%20https://rvaghashiya.github.io/project/secure-and-smart-university/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://rvaghashiya.github.io/project/secure-and-smart-university/&amp;title=Secure%20and%20Smart%20University" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://rvaghashiya.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu6928e394e88b6720dbf624c8b9086cc5_132946_270x270_fill_lanczos_center_2.png" alt="Rajkumar Vaghashiya"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://rvaghashiya.github.io/">Rajkumar Vaghashiya</a></h5>
+      <h6 class="card-subtitle">BTech in Computer Engineering</h6>
+      <p class="card-text">My research interests include applied artificial intelligence, computer vision, and digital health technology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:rajkumar.vce16@sot.pdpu.ac.in" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=2PrpeVAAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/rvaghashiya" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/rajkumar-vaghashiya/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/Rajkumar_Vaghashiya_CV.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/secure-and-smart-university/index1/">Secure &amp; Smart University</a></li>
+      
+      <li><a href="/project/smart-portable-and-cost-effective-elisa-reader/">Smart, Portable, and Cost-effective ELISA Reader</a></li>
+      
+      <li><a href="/post/smart-portable-and-cost-effective-elisa-reader/index1/">Smart, Portable, and Cost-effective ELISA Reader</a></li>
+      
+      <li><a href="/post/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/index1/">Intelligent Digital Inline Holographic Micrograph (DIHM) Cell-Enhancement and Characterization</a></li>
+      
+      <li><a href="/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/">Intelligent Digital Inline Holographic Micrograph (DIHM) Cell-Enhancement and Characterization</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2022 Rajkumar Vaghashiya
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <!-- raw HTML omitted -->Wowchemy<!-- raw HTML omitted --> — the free, <!-- raw HTML omitted -->open source<!-- raw HTML omitted --> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.680d7cef0a5be1b541c86087252b7547.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.247fd8f54253895301106e3006f53f38.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
