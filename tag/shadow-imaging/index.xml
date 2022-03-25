@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shadow Imaging | Rajkumar Vaghashiya</title>
+    <link>https://rvaghashiya.github.io/tag/shadow-imaging/</link>
+      <atom:link href="https://rvaghashiya.github.io/tag/shadow-imaging/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shadow Imaging</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Rajkumar Vaghashiya</copyright><lastBuildDate>Sun, 27 Feb 2022 18:20:34 +0000</lastBuildDate>
+    <image>
+      <url>https://rvaghashiya.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Shadow Imaging</title>
+      <link>https://rvaghashiya.github.io/tag/shadow-imaging/</link>
+    </image>
+    
+    <item>
+      <title>Machine Learning Based Lens-Free Shadow Imaging Technique for Field-Portable Cytometry</title>
+      <link>https://rvaghashiya.github.io/publication/machine-learning-based-lens-free-shadow-imaging-technique-for-field-portable-cytometry/</link>
+      <pubDate>Sun, 27 Feb 2022 18:20:34 +0000</pubDate>
+      <guid>https://rvaghashiya.github.io/publication/machine-learning-based-lens-free-shadow-imaging-technique-for-field-portable-cytometry/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
