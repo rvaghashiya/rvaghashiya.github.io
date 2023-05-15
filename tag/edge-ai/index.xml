@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Edge AI | Rajkumar Vaghashiya</title>
+    <link>https://rvaghashiya.github.io/tag/edge-ai/</link>
+      <atom:link href="https://rvaghashiya.github.io/tag/edge-ai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Edge AI</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Rajkumar Vaghashiya</copyright><lastBuildDate>Thu, 09 Jul 2020 23:07:00 +0000</lastBuildDate>
+    <image>
+      <url>https://rvaghashiya.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Edge AI</title>
+      <link>https://rvaghashiya.github.io/tag/edge-ai/</link>
+    </image>
+    
+    <item>
+      <title>Computer Pointer Controller</title>
+      <link>https://rvaghashiya.github.io/project/computer-pointer-controller/</link>
+      <pubDate>Thu, 09 Jul 2020 23:07:00 +0000</pubDate>
+      <guid>https://rvaghashiya.github.io/project/computer-pointer-controller/</guid>
+      <description>&lt;h1 id=&#34;computer-pointer-controller&#34;&gt;Computer Pointer Controller&lt;/h1&gt;
+&lt;p&gt;Computer Pointer Controller is a smart application which leverages pre-trained OpenVino models wherein it infers the gaze direction of the subject in a video or webcam feed, and moves the mouse pointer accordingly in that direction.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;aim&#34;&gt;Aim&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;To develop a smart application that infers the gaze direction of the subject in a video or webcam feed, and moves the mouse pointer accordingly in that direction&lt;/li&gt;
+&lt;li&gt;Leverage image processing and pre-trained OpenVINO-models based inference to deliver real-time results&lt;/li&gt;
+&lt;li&gt;Analyze the impact of model precision, type of input video streaming, and the effect of various edge cases and their effect on the results&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;project-set-up-and-installation&#34;&gt;Project Set Up and Installation&lt;/h2&gt;
+&lt;h3 id=&#34;setup-details&#34;&gt;Setup Details&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Details&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Programming Language&lt;/td&gt;
+&lt;td&gt;Python 3.&lt;strong&gt;6&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OpenVino Toolkit Version&lt;/td&gt;
+&lt;td&gt;2020.&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Hardware Used&lt;/td&gt;
+&lt;td&gt;Intel CPU i7 3rd Gen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Enviroments Used&lt;/td&gt;
+&lt;td&gt;Windows WSL, Ubuntu 18.04&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;OpenVino installation guide can be found &lt;a href=&#34;https://docs.openvinotoolkit.org/latest/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;directory-structure&#34;&gt;Directory Structure&lt;/h3&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;application-workflow-pipeline&#34;&gt;Application Workflow Pipeline&lt;/h3&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;benchmarks&#34;&gt;Benchmarks&lt;/h2&gt;
+&lt;h3 id=&#34;performance-evaluation-on-cpu&#34;&gt;Performance Evaluation on CPU&lt;/h3&gt;
+&lt;p&gt;Total frames analyzed: 59&lt;/p&gt;
+&lt;p&gt;Face Detection Model takes nearly 287 ms of load time and 38 ms of total inference time.&lt;/p&gt;
+&lt;p&gt;Model Load Time&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;FP16&lt;/th&gt;
+&lt;th&gt;FP32&lt;/th&gt;
+&lt;th&gt;FP16-INT8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Facial Landmarks Detection&lt;/td&gt;
+&lt;td&gt;122.802 ms&lt;/td&gt;
+&lt;td&gt;205.130 ms&lt;/td&gt;
+&lt;td&gt;558.811 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Headpose Estimation&lt;/td&gt;
+&lt;td&gt;187.159 ms&lt;/td&gt;
+&lt;td&gt;340.448 ms&lt;/td&gt;
+&lt;td&gt;375.702 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gaze Estimation&lt;/td&gt;
+&lt;td&gt;206.344 ms&lt;/td&gt;
+&lt;td&gt;361.897 ms&lt;/td&gt;
+&lt;td&gt;455.502 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total Load Time&lt;/td&gt;
+&lt;td&gt;0.82 s&lt;/td&gt;
+&lt;td&gt;1.188 s&lt;/td&gt;
+&lt;td&gt;1.67 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Model Inference Time&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;FP16&lt;/th&gt;
+&lt;th&gt;FP32&lt;/th&gt;
+&lt;th&gt;FP16-INT8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Facial Landmarks Detection&lt;/td&gt;
+&lt;td&gt;1.0 ms&lt;/td&gt;
+&lt;td&gt;1.0 ms&lt;/td&gt;
+&lt;td&gt;1.1 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Headpose Estimation&lt;/td&gt;
+&lt;td&gt;2.7 ms&lt;/td&gt;
+&lt;td&gt;2.7 ms&lt;/td&gt;
+&lt;td&gt;2.6 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gaze Estimation&lt;/td&gt;
+&lt;td&gt;3.4 ms&lt;/td&gt;
+&lt;td&gt;3.3 ms&lt;/td&gt;
+&lt;td&gt;2.5 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total Inference Time&lt;/td&gt;
+&lt;td&gt;11.1 s&lt;/td&gt;
+&lt;td&gt;11.4 s&lt;/td&gt;
+&lt;td&gt;11.7 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;FPS&lt;/td&gt;
+&lt;td&gt;5.315&lt;/td&gt;
+&lt;td&gt;5.363&lt;/td&gt;
+&lt;td&gt;5.042&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The inference times with respect to the models depict the average inference time per frame.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The results have been benchmarked on async inference&lt;/li&gt;
+&lt;li&gt;Model Load time for FP16 is the least, followed by FP32, followed by INT8&lt;/li&gt;
+&lt;li&gt;Average inference time is greatest for INT8, followed by FP32, followed by FP16, which may be attributed to the trade-off between greater information involved in the computation of models having relatively higher precision and the hardware architecture of the system under use.&lt;/li&gt;
+&lt;li&gt;A decrease in the model precision leads to loss of the model accuracy at the cost of increasing the inference speed.&lt;/li&gt;
+&lt;li&gt;Frames are processed relatively faster in FP32, followed by FP16 and then INT8.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;edge-cases&#34;&gt;Edge Cases&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;In case a person is not detected in the frame, the incident is logged and processing moves on to the next frame in the queue.&lt;/li&gt;
+&lt;li&gt;In case of multiple persons in the frame, only the face of the first person to be detected will be used in the further processing.&lt;/li&gt;
+&lt;li&gt;In case the new mouse corrdinates from gaze estimation cannot be accomodated on the current screen resolution, the event is logged and processing moves onto next frame in the sequence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/raj-98/Computer-Pointer-Controller&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git: Computer Pointer Controller&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>People Counter App</title>
+      <link>https://rvaghashiya.github.io/project/people-counter-app/</link>
+      <pubDate>Thu, 25 Jun 2020 22:50:00 +0000</pubDate>
+      <guid>https://rvaghashiya.github.io/project/people-counter-app/</guid>
+      <description>&lt;h1 id=&#34;deploy-a-people-counter-app-at-the-edge&#34;&gt;Deploy a People Counter App at the Edge&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Details&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Programming Language:&lt;/td&gt;
+&lt;td&gt;Python 3.5 or 3.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./people-counter-image.png&#34; alt=&#34;people-counter-python&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;what-it-does&#34;&gt;What it Does&lt;/h2&gt;
+&lt;p&gt;The people counter application will demonstrate how to create a smart video IoT solution using Intel® hardware and software tools. The app will detect people in a designated area, providing the number of people in the frame, average duration of people in frame, and total count.&lt;/p&gt;
+&lt;h2 id=&#34;aim&#34;&gt;Aim&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an app that will help maintain social distancing at public places likes grocery stores and shopping malls, to curb the spread of Covid-19 virus&lt;/li&gt;
+&lt;li&gt;The app will detect people in a designated area, providing the number of people in the frame, average duration of people in frame, and total count.&lt;/li&gt;
+&lt;li&gt;The people counter application is a smart video IoT solution based on Intel® hardware and software tools.&lt;/li&gt;
+&lt;li&gt;Utilizes deep learning, image processing, and OpenVINO-based inferencing at the edge.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-it-works&#34;&gt;How it Works&lt;/h2&gt;
+&lt;p&gt;The counter will use the Inference Engine included in the Intel® Distribution of OpenVINO™ Toolkit. The model used should be able to identify people in a video frame. The app should count the number of people in the current frame, the duration that a person is in the frame (time elapsed between entering and exiting a frame) and the total count of people. It then sends the data to a local web server using the Paho MQTT Python package.&lt;/p&gt;
+&lt;p&gt;You will choose a model to use and convert it with the Model Optimizer.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;./arch_diagram.png&#34; alt=&#34;architectural diagram&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;h3 id=&#34;hardware&#34;&gt;Hardware&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;6th to 10th generation Intel® Core™ processor with Iris® Pro graphics or Intel® HD Graphics.&lt;/li&gt;
+&lt;li&gt;OR use of Intel® Neural Compute Stick 2 (NCS2)&lt;/li&gt;
+&lt;li&gt;OR Udacity classroom workspace for the related course&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;software&#34;&gt;Software&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Intel® Distribution of OpenVINO™ toolkit 2019 R3 release&lt;/li&gt;
+&lt;li&gt;Node v6.17.1&lt;/li&gt;
+&lt;li&gt;Npm v3.10.10&lt;/li&gt;
+&lt;li&gt;CMake&lt;/li&gt;
+&lt;li&gt;MQTT Mosca server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/raj-98/People-Counter-App&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git: People Counter App&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/udacity/nd131-openvino-fundamentals-project-starter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reference Repo&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
