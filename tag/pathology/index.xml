@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pathology | Rajkumar Vaghashiya</title>
+    <link>https://rvaghashiya.github.io/tag/pathology/</link>
+      <atom:link href="https://rvaghashiya.github.io/tag/pathology/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pathology</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2025 Rajkumar Vaghashiya</copyright><lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://rvaghashiya.github.io/media/icon_hu28064bd7dbead2b6fae76da43ba44099_5444_512x512_fill_lanczos_center_3.png</url>
+      <title>Pathology</title>
+      <link>https://rvaghashiya.github.io/tag/pathology/</link>
+    </image>
+    
+    <item>
+      <title>Intelligent Digital Inline Holographic Micrograph (DIHM) Cell-Enhancement and Characterization</title>
+      <link>https://rvaghashiya.github.io/post/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/index1/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://rvaghashiya.github.io/post/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/index1/</guid>
+      <description>&lt;h2 id=&#34;intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization&#34;&gt;Intelligent Digital Inline Holographic Micrograph (DIHM) Cell-Enhancement and Characterization&lt;/h2&gt;
+&lt;h2 id=&#34;project-intro&#34;&gt;Project Intro&lt;/h2&gt;
+&lt;p&gt;Developing a novel and efficient neural model for detecting and classifying cells such as RBC, WBC, and cancer cells, etc.(cellular pathology) from DIH(Digital Inline Holographic) microscopy images&lt;/p&gt;
+&lt;p&gt;Implementation on a resource-constrained device to develop a cheap, reliable and portable point-of-care testing facility for diagnosis of pathological diseases, especially for usage in rural areas&lt;/p&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Segment cell-lines in DIH micrograph; performs signal enhancement using CNN-based autoencoder, followed by the cell-line characterization&lt;/li&gt;
+&lt;li&gt;ROC-AUC: &amp;gt;0.98 for RBC, WBC, and microbeads; &amp;gt;0.88 for cancer cells HepG2 and MCF7&lt;/li&gt;
+&lt;li&gt;Easy accommodation of newer cell-lines. Python, TensorFlow, OpenCV&lt;/li&gt;
+&lt;li&gt;Preliminary work &lt;a href=&#34;https://ieeexplore.ieee.org/document/9374330&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;published&lt;/a&gt; at the 8th IEEE ICHI&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-breast-cancer-disease-statistics&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img1.png&#34; alt=&#34;Breast Cancer Disease Statistics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Breast Cancer Disease Statistics
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-limitations-of-traditional-optic-microscopy&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img2.png&#34; alt=&#34;Limitations of Traditional Optic Microscopy&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Limitations of Traditional Optic Microscopy
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;aim&#34;&gt;Aim&lt;/h2&gt;
+&lt;p&gt;The aim of the research is to create a&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cheap,&lt;/li&gt;
+&lt;li&gt;Reliable,&lt;/li&gt;
+&lt;li&gt;Adaptable,&lt;/li&gt;
+&lt;li&gt;Portable, and&lt;/li&gt;
+&lt;li&gt;Intelligent
+real-time point-of-care testing facility that could be used in resource-constrained environments, especially such as those in a rural setting.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img3.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-cell-lines-used-in-the-project&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;cells.png&#34; alt=&#34;Cell-lines used in the project&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Cell-lines used in the project
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;current-progress&#34;&gt;Current Progress&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-cell-line-eda&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;img4.png&#34; alt=&#34;Cell-line EDA&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Cell-line EDA
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The colored cell-lines is the result of EDA on the statistical properties and pixel intensity in the images&lt;/p&gt;
+&lt;h2 id=&#34;segmentation-results&#34;&gt;Segmentation Results&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-segmentation-involves-bit-plane-splicing-adaptive-thresholding-and-contour-approximation-to-crop-the-cell-lines&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;segmented_cells.png&#34; alt=&#34;The segmentation involves bit-plane splicing, adaptive thresholding, and contour approximation to crop the cell-lines&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The segmentation involves bit-plane splicing, adaptive thresholding, and contour approximation to crop the cell-lines
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;cnn-model-performance&#34;&gt;CNN Model Performance&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-confusion-matrix&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;confmatrix_with_acc_prevv.png&#34; alt=&#34;Confusion Matrix&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Confusion Matrix
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The recognition performance of the CNN model on the augmented dataset&lt;/p&gt;
+&lt;h2 id=&#34;final-cell-counts-for-the-input-micrograph&#34;&gt;Final Cell Counts for the Input Micrograph&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-final-result-in-form-of-cell-counts-for-the-roi-region-of-interest-window-selected-in-the-dih-micrograph&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;final_count.png&#34; alt=&#34;The final result in form of cell-counts for the ROI (region of interest) window selected in the DIH micrograph&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The final result in form of cell-counts for the ROI (region of interest) window selected in the DIH micrograph
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intelligent Digital Inline Holographic Micrograph (DIHM) Cell-Enhancement and Characterization</title>
+      <link>https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/</link>
+      <pubDate>Mon, 07 Jan 2019 21:20:00 +0000</pubDate>
+      <guid>https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/</guid>
+      <description>&lt;h2 id=&#34;project-intro&#34;&gt;Project Intro&lt;/h2&gt;
+&lt;p&gt;Developing a novel and efficient neural model for detecting and classifying cells such as RBC, WBC, and cancer cells, etc. (cellular pathology) from DIH (Digital Inline Holographic) microscopy images&lt;/p&gt;
+&lt;p&gt;Implementation on a resource-constrained device to develop a cheap, reliable and portable point-of-care testing facility for diagnosis of pathological diseases, especially for usage in rural areas&lt;/p&gt;
+&lt;h2 id=&#34;highlights&#34;&gt;Highlights&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Segment cell-lines in DIH micrograph; performs signal enhancement using CNN-based autoencoder, followed by the cell-line characterization&lt;/li&gt;
+&lt;li&gt;ROC-AUC: &amp;gt;0.98 for RBC, WBC, and microbeads; &amp;gt;0.88 for cancer cells HepG2 and MCF7&lt;/li&gt;
+&lt;li&gt;Easy accommodation of newer cell-lines. Python, TensorFlow, OpenCV&lt;/li&gt;
+&lt;li&gt;Preliminary work &lt;a href=&#34;https://ieeexplore.ieee.org/document/9374330&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;published&lt;/a&gt; at the 8th IEEE International Conference on Healthcare Informatics (ICHI) 2020&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-breast-cancer-disease-statistics&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Breast Cancer Disease Statistics&#34; srcset=&#34;
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img1_hu8ac06d34c690e9869143e5654758e9be_185519_372a6e66c3d543e58c2e4463a6763991.webp 400w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img1_hu8ac06d34c690e9869143e5654758e9be_185519_c8a89f720056f3376ff6ecb85052b26c.webp 760w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img1_hu8ac06d34c690e9869143e5654758e9be_185519_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img1_hu8ac06d34c690e9869143e5654758e9be_185519_372a6e66c3d543e58c2e4463a6763991.webp&#34;
+               width=&#34;666&#34;
+               height=&#34;292&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Breast Cancer Disease Statistics
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-limitations-of-traditional-optic-microscopy&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Limitations of Traditional Optic Microscopy&#34; srcset=&#34;
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img2_hub55ec7b5fd66b1f4d1af27ec086b55cb_100527_2e91625c9bfa906ab24a782a153663c5.webp 400w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img2_hub55ec7b5fd66b1f4d1af27ec086b55cb_100527_bfeb7724d28b007ca743515bd781ff8b.webp 760w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img2_hub55ec7b5fd66b1f4d1af27ec086b55cb_100527_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img2_hub55ec7b5fd66b1f4d1af27ec086b55cb_100527_2e91625c9bfa906ab24a782a153663c5.webp&#34;
+               width=&#34;702&#34;
+               height=&#34;406&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Limitations of Traditional Optic Microscopy
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;aim&#34;&gt;Aim&lt;/h2&gt;
+&lt;p&gt;The aim of the research is to create a&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cheap,&lt;/li&gt;
+&lt;li&gt;Reliable,&lt;/li&gt;
+&lt;li&gt;Adaptable,&lt;/li&gt;
+&lt;li&gt;Portable, and&lt;/li&gt;
+&lt;li&gt;Intelligent
+real-time point-of-care testing facility that could be used in resource-constrained environments, especially such as those in a rural setting.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img3_hu3437bf12853f01934bb7d5a92b93994c_57883_90082e489b54f54d869006d213771d77.webp 400w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img3_hu3437bf12853f01934bb7d5a92b93994c_57883_5468ee5527d4cdabb8746277caacd5ed.webp 760w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img3_hu3437bf12853f01934bb7d5a92b93994c_57883_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img3_hu3437bf12853f01934bb7d5a92b93994c_57883_90082e489b54f54d869006d213771d77.webp&#34;
+               width=&#34;728&#34;
+               height=&#34;412&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-cell-lines-used-in-the-project&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Cell-lines used in the project&#34; srcset=&#34;
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/cells_hudd1927cb78bec53e9676f04b0e2d8b7b_109686_43d132f6a19ad3c3da228296f90083b6.webp 400w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/cells_hudd1927cb78bec53e9676f04b0e2d8b7b_109686_00bd1132fd841a9c6e0ade09ba5542e1.webp 760w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/cells_hudd1927cb78bec53e9676f04b0e2d8b7b_109686_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/cells_hudd1927cb78bec53e9676f04b0e2d8b7b_109686_43d132f6a19ad3c3da228296f90083b6.webp&#34;
+               width=&#34;602&#34;
+               height=&#34;480&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Cell-lines used in the project
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;current-progress&#34;&gt;Current Progress&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-cell-line-eda&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Cell-line EDA&#34; srcset=&#34;
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img4_hua953d76968a823f2abe1a0204f1da5bb_158154_8637535f1ba9b5a304186cf28b9110c6.webp 400w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img4_hua953d76968a823f2abe1a0204f1da5bb_158154_6aaf997381c2b7f1caf105394378648a.webp 760w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img4_hua953d76968a823f2abe1a0204f1da5bb_158154_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/img4_hua953d76968a823f2abe1a0204f1da5bb_158154_8637535f1ba9b5a304186cf28b9110c6.webp&#34;
+               width=&#34;712&#34;
+               height=&#34;370&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Cell-line EDA
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The colored cell-lines is the result of EDA on the statistical properties and pixel intensity in the images&lt;/p&gt;
+&lt;h2 id=&#34;segmentation-results&#34;&gt;Segmentation Results&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-segmentation-involves-bit-plane-splicing-adaptive-thresholding-and-contour-approximation-to-crop-the-cell-lines&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;The segmentation involves bit-plane splicing, adaptive thresholding, and contour approximation to crop the cell-lines&#34; srcset=&#34;
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/segmented_cells_hub292d90b0ae535b51923518faf2fcee3_120666_b2157c04a6f7c59bc70ddc1d36639a9c.webp 400w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/segmented_cells_hub292d90b0ae535b51923518faf2fcee3_120666_c3696f85409aa5b7128ba415714ef70e.webp 760w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/segmented_cells_hub292d90b0ae535b51923518faf2fcee3_120666_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/segmented_cells_hub292d90b0ae535b51923518faf2fcee3_120666_b2157c04a6f7c59bc70ddc1d36639a9c.webp&#34;
+               width=&#34;738&#34;
+               height=&#34;334&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The segmentation involves bit-plane splicing, adaptive thresholding, and contour approximation to crop the cell-lines
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;cnn-model-performance&#34;&gt;CNN Model Performance&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-confusion-matrix&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Confusion Matrix&#34; srcset=&#34;
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/confmatrix_with_acc_prevv_hu57938ce728a6ebcdb8a739e041244294_158370_3db7f5983ffe1f653359c13fe18caad2.webp 400w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/confmatrix_with_acc_prevv_hu57938ce728a6ebcdb8a739e041244294_158370_98d6d264a32292389bdfa0af6af3ab36.webp 760w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/confmatrix_with_acc_prevv_hu57938ce728a6ebcdb8a739e041244294_158370_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/confmatrix_with_acc_prevv_hu57938ce728a6ebcdb8a739e041244294_158370_3db7f5983ffe1f653359c13fe18caad2.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;634&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Confusion Matrix
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;The recognition performance of the CNN model on the augmented dataset&lt;/p&gt;
+&lt;h2 id=&#34;final-cell-counts-for-the-input-micrograph&#34;&gt;Final Cell Counts for the Input Micrograph&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-the-final-result-in-form-of-cell-counts-for-the-roi-region-of-interest-window-selected-in-the-dih-micrograph&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;The final result in form of cell-counts for the ROI (region of interest) window selected in the DIH micrograph&#34; srcset=&#34;
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/final_count_hu4532d829720968e51c8a947e44bbd19c_17679_36a01fe2847a7411d717fc2320bd3d1e.webp 400w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/final_count_hu4532d829720968e51c8a947e44bbd19c_17679_c18645217578b81a0af074f6aeceb997.webp 760w,
+               /project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/final_count_hu4532d829720968e51c8a947e44bbd19c_17679_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://rvaghashiya.github.io/project/intelligent-digital-inline-holographic-micrograph-dihm-cell-enhancement-and-characterization/final_count_hu4532d829720968e51c8a947e44bbd19c_17679_36a01fe2847a7411d717fc2320bd3d1e.webp&#34;
+               width=&#34;630&#34;
+               height=&#34;470&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      The final result in form of cell-counts for the ROI (region of interest) window selected in the DIH micrograph
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
