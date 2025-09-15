@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DIH Microscopy | Rajkumar Vaghashiya</title>
+    <link>https://rvaghashiya.github.io/tag/dih-microscopy/</link>
+      <atom:link href="https://rvaghashiya.github.io/tag/dih-microscopy/index.xml" rel="self" type="application/rss+xml" />
+    <description>DIH Microscopy</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2025 Rajkumar Vaghashiya</copyright><lastBuildDate>Sat, 01 Aug 2020 23:09:00 +0000</lastBuildDate>
+    <image>
+      <url>https://rvaghashiya.github.io/media/icon_hu28064bd7dbead2b6fae76da43ba44099_5444_512x512_fill_lanczos_center_3.png</url>
+      <title>DIH Microscopy</title>
+      <link>https://rvaghashiya.github.io/tag/dih-microscopy/</link>
+    </image>
+    
+    <item>
+      <title>DIH-Cell-Augmentor</title>
+      <link>https://rvaghashiya.github.io/project/dih-cell-augmentor/</link>
+      <pubDate>Sat, 01 Aug 2020 23:09:00 +0000</pubDate>
+      <guid>https://rvaghashiya.github.io/project/dih-cell-augmentor/</guid>
+      <description>&lt;h1 id=&#34;dih-cell-augmentor&#34;&gt;DIH-Cell-Augmentor&lt;/h1&gt;
+&lt;p&gt;A setup for augmentation of biological cells captured via Digital Inline Holography&lt;/p&gt;
+&lt;h2 id=&#34;aim&#34;&gt;Aim&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A script to augment the cell-lines obtained via DIHM.&lt;/li&gt;
+&lt;li&gt;It generates rotated copies of the input cell sample, while maintaining the same image dimensions and near-similar sample background, using OpenCV.&lt;/li&gt;
+&lt;li&gt;The augmented samples preserve the spatial features as well as the statistical distribution present in the input sample.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;method&#34;&gt;Method&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Load dataset, having images grouped under labels&lt;/li&gt;
+&lt;li&gt;Augment cell sample by rotation at specific angle&lt;/li&gt;
+&lt;li&gt;Store augmented images in a csv&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;augmentation-procedure&#34;&gt;Augmentation Procedure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a mask to extract the cell background&lt;/li&gt;
+&lt;li&gt;Negate the above mask to extract the cell&lt;/li&gt;
+&lt;li&gt;Rotate the image by specified degree, achieved via &lt;code&gt;getRotationMatrix2D&lt;/code&gt; and &lt;code&gt;warpAffine&lt;/code&gt; functions in cv2&lt;/li&gt;
+&lt;li&gt;Extract the rotated cell signature using the negated mask&lt;/li&gt;
+&lt;li&gt;Mask it with the extracted cell background to create an augmented image, with same shape as original image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: The code is applicable only for augmentation of objects/cells lying within the maximum fitting circle which can be fit into the image&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;cv2&lt;/li&gt;
+&lt;li&gt;glob, or alternatively use os&lt;/li&gt;
+&lt;li&gt;numpy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo:&lt;/h2&gt;
+&lt;h3 id=&#34;input-image&#34;&gt;Input Image:&lt;/h3&gt;
+&lt;img src=&#34;images/original.jpg&#34; width=100 &gt;
+&lt;h3 id=&#34;augmented-images&#34;&gt;Augmented Images:&lt;/h3&gt;
+&lt;p&gt;Augmented Images on rotation by 0, 10, 20, 30,&amp;hellip;..,350 degrees :&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;th&gt;&lt;!-- --&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_0.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_40.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_80.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_120.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_160.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_200.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_240.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_280.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_320.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;img src=&#34;images/aug_img_350.jpg&#34; width=100 &gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note: Black dot has been added for easier vizualization&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/raj-98/DIH-Cell-Augmentor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Git: DIH Cell Augmentor&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
